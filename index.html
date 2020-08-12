@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
@@ -11,7 +10,6 @@
 
 <body>
     <div class="box"> </div>
-=======
     <title>使用jsonp获取腾讯天气信息</title>
     <link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.min.css">
     <script src="./jquery.js"></script>
@@ -22,33 +20,33 @@
             padding-top: 60px;
         }
     </style>
-</head>
+    </head>
 
-<body>
-    <div class="container">
-        <table class="table table-striped table-hover" align="center" id="box">
-            <thead>
-                <tr>
-                    <th>时间</th>
-                    <th>温度</th>
-                    <th>天气</th>
-                    <th>风向</th>
-                    <th>风力</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>{{dateFormat($value.update_time)}}</td>
-                    <td>{{$value.degree}}</td>
-                    <td>{{$value.weather}}</td>
-                    <td>{{$value.wind_direction}}</td>
-                    <td>{{$value.wind_power}}</td>
-                </tr>
-            </tbody>
+    <body>
+        <div class="container">
+            <table class="table table-striped table-hover" align="center" id="box">
+                <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>温度</th>
+                        <th>天气</th>
+                        <th>风向</th>
+                        <th>风力</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{dateFormat($value.update_time)}}</td>
+                        <td>{{$value.degree}}</td>
+                        <td>{{$value.weather}}</td>
+                        <td>{{$value.wind_direction}}</td>
+                        <td>{{$value.wind_power}}</td>
+                    </tr>
+                </tbody>
 
-        </table>
-    </div>
-    <script type="text/html" id="tpl">
+            </table>
+        </div>
+        <script type="text/html" id="tpl">
 		{{each forecast_1h}}
 		<tr>
 			<td>{{$value.update_time | tt}}</td>
@@ -60,7 +58,6 @@
 		{{/each}}
 
 	</script>
->>>>>>> login
-</body>
+    </body>
 
 </html>
